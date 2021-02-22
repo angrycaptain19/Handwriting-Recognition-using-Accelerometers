@@ -55,7 +55,7 @@ with open(file_path, 'r+') as csvfile:
             m[1] = row[2 + shift_x]
             m[2] = row[3 + shift_x]
             time.append(float(t))
-            for i in range(0, 3):
+            for i in range(3):
                 magnitude[i].append(float(m[i]) if abs(float(m[i])) > error else 0)
 
 
